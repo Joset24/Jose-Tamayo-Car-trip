@@ -34,14 +34,14 @@
             txtNumWidgets = new TextBox();
             lstOut = new ListBox();
             btnCal = new Button();
-            btn = new Button();
+            btnReset = new Button();
             btnQuit = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(61, 102);
+            label1.Location = new Point(72, 107);
             label1.Name = "label1";
             label1.Size = new Size(94, 15);
             label1.TabIndex = 0;
@@ -53,6 +53,8 @@
             txtCustomerName.Name = "txtCustomerName";
             txtCustomerName.Size = new Size(226, 23);
             txtCustomerName.TabIndex = 1;
+            txtCustomerName.Enter += txtCustomerName_Enter;
+            txtCustomerName.Leave += txtCustomerName_Leave;
             // 
             // label2
             // 
@@ -80,24 +82,30 @@
             lstOut.Name = "lstOut";
             lstOut.Size = new Size(333, 109);
             lstOut.TabIndex = 4;
+            lstOut.TabStop = false;
+            lstOut.SelectedIndexChanged += lstOut_SelectedIndexChanged;
             // 
             // btnCal
             // 
+            btnCal.BackColor = SystemColors.Window;
             btnCal.Location = new Point(97, 344);
             btnCal.Name = "btnCal";
             btnCal.Size = new Size(102, 51);
             btnCal.TabIndex = 5;
-            btnCal.Text = "Calculate Total";
-            btnCal.UseVisualStyleBackColor = true;
+            btnCal.Text = "&Calculate Total";
+            btnCal.UseVisualStyleBackColor = false;
+            btnCal.Click += btnCal_Click;
+            btnCal.Leave += btnCal_Leave;
             // 
-            // btn
+            // btnReset
             // 
-            btn.Location = new Point(205, 344);
-            btn.Name = "btn";
-            btn.Size = new Size(75, 51);
-            btn.TabIndex = 6;
-            btn.Text = "Reset";
-            btn.UseVisualStyleBackColor = true;
+            btnReset.Location = new Point(205, 344);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(75, 51);
+            btnReset.TabIndex = 6;
+            btnReset.Text = "&Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // btnQuit
             // 
@@ -105,7 +113,7 @@
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(75, 51);
             btnQuit.TabIndex = 7;
-            btnQuit.Text = "Quit";
+            btnQuit.Text = "&Quit";
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += button3_Click;
             // 
@@ -115,7 +123,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnQuit);
-            Controls.Add(btn);
+            Controls.Add(btnReset);
             Controls.Add(btnCal);
             Controls.Add(lstOut);
             Controls.Add(txtNumWidgets);
@@ -136,7 +144,8 @@
         private TextBox txtNumWidgets;
         private ListBox lstOut;
         private Button btnCal;
-        private Button btn;
         private Button btnQuit;
+        
+        private Button btnReset;
     }
 }
