@@ -30,13 +30,22 @@ namespace Jose_Tamayo_Car_trip
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtCustomerName.Clear();
-            txtNumWidgets.Clear();
-            lstOut.Items.Clear();
+            txtNumGallon
+
         }
 
         private void btnCal_Click(object sender, EventArgs e)
         {
+            // variables need to be daclared with data type - string
+            string customerName;
+            int numQallons;
 
+
+            // Read from the text into the variable
+            customerName = txtCustomerName.Text;
+
+
+            btnReset.Focus();
         }
 
         private void btnCal_Leave(object sender, EventArgs e)
@@ -51,7 +60,12 @@ namespace Jose_Tamayo_Car_trip
 
         private void txtCustomerName_Leave(object sender, EventArgs e)
         {
-            txtCustomerName.BackColor= SystemColors.Window;
+            txtCustomerName.BackColor = SystemColors.Window;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

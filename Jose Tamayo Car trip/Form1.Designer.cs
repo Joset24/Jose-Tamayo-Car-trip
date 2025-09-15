@@ -31,17 +31,21 @@
             label1 = new Label();
             txtCustomerName = new TextBox();
             label2 = new Label();
-            txtNumWidgets = new TextBox();
-            lstOut = new ListBox();
+            txtNumGallon = new TextBox();
+            listbox = new ListBox();
             btnCal = new Button();
             btnReset = new Button();
             btnQuit = new Button();
+            label3 = new Label();
+            txtTravel = new TextBox();
+            label4 = new Label();
+            txtMGP = new TextBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(72, 107);
+            label1.Location = new Point(53, 107);
             label1.Name = "label1";
             label1.Size = new Size(94, 15);
             label1.TabIndex = 0;
@@ -49,7 +53,7 @@
             // 
             // txtCustomerName
             // 
-            txtCustomerName.Location = new Point(172, 99);
+            txtCustomerName.Location = new Point(172, 104);
             txtCustomerName.Name = "txtCustomerName";
             txtCustomerName.Size = new Size(226, 23);
             txtCustomerName.TabIndex = 1;
@@ -66,29 +70,29 @@
             label2.Text = "Number of Gallon";
             label2.Click += label2_Click;
             // 
-            // txtNumWidgets
+            // txtNumGallon
             // 
-            txtNumWidgets.Location = new Point(172, 140);
-            txtNumWidgets.Name = "txtNumWidgets";
-            txtNumWidgets.Size = new Size(226, 23);
-            txtNumWidgets.TabIndex = 3;
-            txtNumWidgets.TextChanged += textBox1_TextChanged;
+            txtNumGallon.Location = new Point(172, 140);
+            txtNumGallon.Name = "txtNumGallon";
+            txtNumGallon.Size = new Size(226, 23);
+            txtNumGallon.TabIndex = 3;
+            txtNumGallon.TextChanged += textBox1_TextChanged;
             // 
-            // lstOut
+            // listbox
             // 
-            lstOut.FormattingEnabled = true;
-            lstOut.ItemHeight = 15;
-            lstOut.Location = new Point(84, 195);
-            lstOut.Name = "lstOut";
-            lstOut.Size = new Size(333, 109);
-            lstOut.TabIndex = 4;
-            lstOut.TabStop = false;
-            lstOut.SelectedIndexChanged += lstOut_SelectedIndexChanged;
+            listbox.FormattingEnabled = true;
+            listbox.ItemHeight = 15;
+            listbox.Location = new Point(84, 241);
+            listbox.Name = "listbox";
+            listbox.Size = new Size(333, 109);
+            listbox.TabIndex = 4;
+            listbox.TabStop = false;
+            listbox.SelectedIndexChanged += lstOut_SelectedIndexChanged;
             // 
             // btnCal
             // 
             btnCal.BackColor = SystemColors.Window;
-            btnCal.Location = new Point(97, 344);
+            btnCal.Location = new Point(53, 375);
             btnCal.Name = "btnCal";
             btnCal.Size = new Size(102, 51);
             btnCal.TabIndex = 5;
@@ -99,7 +103,7 @@
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(205, 344);
+            btnReset.Location = new Point(237, 375);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(75, 51);
             btnReset.TabIndex = 6;
@@ -109,7 +113,7 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(323, 344);
+            btnQuit.Location = new Point(388, 375);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(75, 51);
             btnQuit.TabIndex = 7;
@@ -117,16 +121,53 @@
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += button3_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(84, 172);
+            label3.Name = "label3";
+            label3.Size = new Size(37, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Travel";
+            label3.Click += label3_Click;
+            // 
+            // txtTravel
+            // 
+            txtTravel.Location = new Point(172, 169);
+            txtTravel.Name = "txtTravel";
+            txtTravel.Size = new Size(226, 23);
+            txtTravel.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(84, 211);
+            label4.Name = "label4";
+            label4.Size = new Size(33, 15);
+            label4.TabIndex = 10;
+            label4.Text = "MPG";
+            // 
+            // txtMGP
+            // 
+            txtMGP.Location = new Point(172, 212);
+            txtMGP.Name = "txtMGP";
+            txtMGP.Size = new Size(226, 23);
+            txtMGP.TabIndex = 11;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtMGP);
+            Controls.Add(label4);
+            Controls.Add(txtTravel);
+            Controls.Add(label3);
             Controls.Add(btnQuit);
             Controls.Add(btnReset);
             Controls.Add(btnCal);
-            Controls.Add(lstOut);
-            Controls.Add(txtNumWidgets);
+            Controls.Add(listbox);
+            Controls.Add(txtNumGallon);
             Controls.Add(label2);
             Controls.Add(txtCustomerName);
             Controls.Add(label1);
@@ -141,11 +182,15 @@
         private Label label1;
         private TextBox txtCustomerName;
         private Label label2;
-        private TextBox txtNumWidgets;
-        private ListBox lstOut;
+        private TextBox txtNumGallon;
+        private ListBox listbox;
         private Button btnCal;
         private Button btnQuit;
         
         private Button btnReset;
+        private Label label3;
+        private TextBox txtTravel;
+        private Label label4;
+        private TextBox txtMGP;
     }
 }
