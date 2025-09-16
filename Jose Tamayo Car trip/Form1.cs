@@ -30,7 +30,10 @@ namespace Jose_Tamayo_Car_trip
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtCustomerName.Clear();
-            txtNumGallon
+            txtNumGallon.Clear();
+            txtTravel.Clear();
+            txtMGP.Clear();
+
 
         }
 
@@ -38,7 +41,9 @@ namespace Jose_Tamayo_Car_trip
         {
             // variables need to be daclared with data type - string
             string customerName;
-            int numQallons;
+            int NumberOfGallon;
+            decimal GallonRate;
+
 
 
             // Read from the text into the variable
