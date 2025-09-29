@@ -33,7 +33,8 @@ namespace Jose_Tamayo_Car_trip
             txtNumGallon.Clear();
             txtTravel.Clear();
             txtMGP.Clear();
-
+            IstOut.Items.Clear();
+            txtCustomerName.Focus();
 
         }
 
@@ -41,10 +42,10 @@ namespace Jose_Tamayo_Car_trip
         {
             // variables need to be daclared with data type - string
             string customerName;
-            int NumberOfGallon;
+            int NumberofGallon;
             decimal GallonRate;
-
-
+            
+            
 
             // Read from the text into the variable
             customerName = txtCustomerName.Text;
