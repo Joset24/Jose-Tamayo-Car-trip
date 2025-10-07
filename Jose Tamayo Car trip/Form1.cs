@@ -33,7 +33,7 @@ namespace Jose_Tamayo_Car_trip
             txtNumGallon.Clear();
             txtTravel.Clear();
             txtMGP.Clear();
-            IstOut.Items.Clear();
+            listbox.Items.Clear();
             txtCustomerName.Focus();
 
         }
@@ -43,15 +43,27 @@ namespace Jose_Tamayo_Car_trip
             // variables need to be daclared with data type - string
             string customerName;
             int NumberofGallon;
-            decimal GallonRate;
+            
             
             
 
-            // Read from the text into the variable
+           
+            // input
+            // Read from the txtbox into the variable
             customerName = txtCustomerName.Text;
+            
+            NumberofGallon = int.Parse(txtNumberofGallon.Text);
 
 
-            btnReset.Focus();
+            // Output - every variable
+            listbox.Items.Add(CustomerName: " + customerName) ;
+
+
+
+
+
+
+           btnReset.Focus();
         }
 
         private void btnCal_Leave(object sender, EventArgs e)
