@@ -29,62 +29,53 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtCustomerName = new TextBox();
             label2 = new Label();
-            txtNumGallon = new TextBox();
+            txtNumberofGallon = new TextBox();
             listbox = new ListBox();
             btnCal = new Button();
             btnReset = new Button();
             btnQuit = new Button();
             label3 = new Label();
             txtTravel = new TextBox();
-            label4 = new Label();
+            LabelMPG = new Label();
             txtMGP = new TextBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(53, 107);
+            label1.Location = new Point(62, 56);
             label1.Name = "label1";
-            label1.Size = new Size(94, 15);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
-            label1.Text = "Customer Name";
-            // 
-            // txtCustomerName
-            // 
-            txtCustomerName.Location = new Point(172, 104);
-            txtCustomerName.Name = "txtCustomerName";
-            txtCustomerName.Size = new Size(226, 23);
-            txtCustomerName.TabIndex = 1;
-            txtCustomerName.Enter += txtCustomerName_Enter;
-            txtCustomerName.Leave += txtCustomerName_Leave;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(53, 140);
+            label2.Location = new Point(62, 100);
             label2.Name = "label2";
-            label2.Size = new Size(102, 15);
+            label2.Size = new Size(128, 20);
             label2.TabIndex = 2;
             label2.Text = "Number of Gallon";
             label2.Click += label2_Click;
             // 
-            // txtNumGallon
+            // txtNumberofGallon
             // 
-            txtNumGallon.Location = new Point(172, 140);
-            txtNumGallon.Name = "txtNumGallon";
-            txtNumGallon.Size = new Size(226, 23);
-            txtNumGallon.TabIndex = 3;
-            txtNumGallon.TextChanged += textBox1_TextChanged;
+            txtNumberofGallon.Location = new Point(198, 100);
+            txtNumberofGallon.Margin = new Padding(3, 4, 3, 4);
+            txtNumberofGallon.Name = "txtNumberofGallon";
+            txtNumberofGallon.Size = new Size(258, 27);
+            txtNumberofGallon.TabIndex = 3;
+            txtNumberofGallon.TextChanged += textBox1_TextChanged;
             // 
             // listbox
             // 
             listbox.FormattingEnabled = true;
-            listbox.ItemHeight = 15;
-            listbox.Location = new Point(84, 241);
+            listbox.Location = new Point(96, 321);
+            listbox.Margin = new Padding(3, 4, 3, 4);
             listbox.Name = "listbox";
-            listbox.Size = new Size(333, 109);
+            listbox.Size = new Size(380, 144);
             listbox.TabIndex = 4;
             listbox.TabStop = false;
             listbox.SelectedIndexChanged += lstOut_SelectedIndexChanged;
@@ -92,9 +83,10 @@
             // btnCal
             // 
             btnCal.BackColor = SystemColors.Window;
-            btnCal.Location = new Point(53, 375);
+            btnCal.Location = new Point(61, 500);
+            btnCal.Margin = new Padding(3, 4, 3, 4);
             btnCal.Name = "btnCal";
-            btnCal.Size = new Size(102, 51);
+            btnCal.Size = new Size(117, 68);
             btnCal.TabIndex = 5;
             btnCal.Text = "&Calculate Total";
             btnCal.UseVisualStyleBackColor = false;
@@ -103,9 +95,10 @@
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(237, 375);
+            btnReset.Location = new Point(271, 500);
+            btnReset.Margin = new Padding(3, 4, 3, 4);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(75, 51);
+            btnReset.Size = new Size(86, 68);
             btnReset.TabIndex = 6;
             btnReset.Text = "&Reset";
             btnReset.UseVisualStyleBackColor = true;
@@ -113,9 +106,10 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(388, 375);
+            btnQuit.Location = new Point(443, 500);
+            btnQuit.Margin = new Padding(3, 4, 3, 4);
             btnQuit.Name = "btnQuit";
-            btnQuit.Size = new Size(75, 51);
+            btnQuit.Size = new Size(86, 68);
             btnQuit.TabIndex = 7;
             btnQuit.Text = "&Quit";
             btnQuit.UseVisualStyleBackColor = true;
@@ -124,53 +118,54 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(84, 172);
+            label3.Location = new Point(97, 142);
             label3.Name = "label3";
-            label3.Size = new Size(37, 15);
+            label3.Size = new Size(48, 20);
             label3.TabIndex = 8;
             label3.Text = "Travel";
-            label3.Click += label3_Click;
             // 
             // txtTravel
             // 
-            txtTravel.Location = new Point(172, 169);
+            txtTravel.Location = new Point(198, 138);
+            txtTravel.Margin = new Padding(3, 4, 3, 4);
             txtTravel.Name = "txtTravel";
-            txtTravel.Size = new Size(226, 23);
+            txtTravel.Size = new Size(258, 27);
             txtTravel.TabIndex = 9;
             // 
-            // label4
+            // LabelMPG
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(84, 211);
-            label4.Name = "label4";
-            label4.Size = new Size(33, 15);
-            label4.TabIndex = 10;
-            label4.Text = "MPG";
+            LabelMPG.AutoSize = true;
+            LabelMPG.Location = new Point(97, 194);
+            LabelMPG.Name = "LabelMPG";
+            LabelMPG.Size = new Size(40, 20);
+            LabelMPG.TabIndex = 10;
+            LabelMPG.Text = "MPG";
             // 
             // txtMGP
             // 
-            txtMGP.Location = new Point(172, 212);
+            txtMGP.Location = new Point(198, 196);
+            txtMGP.Margin = new Padding(3, 4, 3, 4);
             txtMGP.Name = "txtMGP";
-            txtMGP.Size = new Size(226, 23);
+            txtMGP.Size = new Size(258, 27);
             txtMGP.TabIndex = 11;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(569, 600);
             Controls.Add(txtMGP);
-            Controls.Add(label4);
+            Controls.Add(LabelMPG);
             Controls.Add(txtTravel);
             Controls.Add(label3);
             Controls.Add(btnQuit);
             Controls.Add(btnReset);
             Controls.Add(btnCal);
             Controls.Add(listbox);
-            Controls.Add(txtNumGallon);
+            Controls.Add(txtNumberofGallon);
             Controls.Add(label2);
-            Controls.Add(txtCustomerName);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Jose Car Trip";
             ResumeLayout(false);
@@ -180,9 +175,8 @@
         #endregion
 
         private Label label1;
-        private TextBox txtCustomerName;
         private Label label2;
-        private TextBox txtNumGallon;
+        private TextBox txtNumberofGallon;
         private ListBox listbox;
         private Button btnCal;
         private Button btnQuit;
@@ -190,7 +184,7 @@
         private Button btnReset;
         private Label label3;
         private TextBox txtTravel;
-        private Label label4;
+        private Label LabelMPG;
         private TextBox txtMGP;
     }
 }

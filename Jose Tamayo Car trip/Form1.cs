@@ -29,41 +29,41 @@ namespace Jose_Tamayo_Car_trip
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            txtCustomerName.Clear();
-            txtNumGallon.Clear();
+           
+            txtNumberofGallon.Clear();
             txtTravel.Clear();
             txtMGP.Clear();
             listbox.Items.Clear();
-            txtCustomerName.Focus();
+            
 
         }
 
         private void btnCal_Click(object sender, EventArgs e)
         {
             // variables need to be daclared with data type - string
-            string customerName;
+            
             int NumberofGallon;
-            
-            
-            
+            int Travel;
+            int MGP;
 
-           
+
+
             // input
             // Read from the txtbox into the variable
-            customerName = txtCustomerName.Text;
             
-            NumberofGallon = int.Parse(txtNumberofGallon.Text);
-
+               Travel =int.Parse(txtTravel.Text);
+               MGP = int.Parse(txtMGP.Text);
+               NumberofGallon = Travel/MGP;
 
             // Output - every variable
-            listbox.Items.Add(CustomerName: " + customerName) ;
+            
+            listbox.Items.Clear();
+            listbox.Items.Add(NumberofGallon.ToString());
 
 
 
 
-
-
-           btnReset.Focus();
+            btnReset.Focus();
         }
 
         private void btnCal_Leave(object sender, EventArgs e)
@@ -71,17 +71,15 @@ namespace Jose_Tamayo_Car_trip
 
         }
 
-        private void txtCustomerName_Enter(object sender, EventArgs e)
-        {
-            txtCustomerName.BackColor = Color.Beige;
-        }
-
-        private void txtCustomerName_Leave(object sender, EventArgs e)
-        {
-            txtCustomerName.BackColor = SystemColors.Window;
-        }
+        
+        
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
