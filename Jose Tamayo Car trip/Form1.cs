@@ -55,6 +55,9 @@ namespace Jose_Tamayo_Car_trip
             btnReset.Focus();
         }
 
-      
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
