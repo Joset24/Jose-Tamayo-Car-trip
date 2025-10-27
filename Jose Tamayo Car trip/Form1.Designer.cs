@@ -37,22 +37,20 @@
             btnQuit = new Button();
             labelDistance = new Label();
             txtDistance = new TextBox();
-            LabelMPG = new Label();
-            txtMGP = new TextBox();
             label2 = new Label();
             groupBox1 = new GroupBox();
-            rdoSuv = new RadioButton();
-            rdoMinivan = new RadioButton();
             rdoMicro = new RadioButton();
+            rdoMinivan = new RadioButton();
+            rdoSuv = new RadioButton();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 41);
+            label1.Location = new Point(18, 55);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
             // 
             // lblDestination
@@ -66,27 +64,29 @@
             // 
             // txtDestination
             // 
-            txtDestination.Location = new Point(173, 73);
+            txtDestination.Location = new Point(198, 97);
+            txtDestination.Margin = new Padding(3, 4, 3, 4);
             txtDestination.Name = "txtDestination";
-            txtDestination.Size = new Size(226, 23);
+            txtDestination.Size = new Size(258, 27);
             txtDestination.TabIndex = 1;
             // 
             // lstOutput
             // 
             lstOutput.FormattingEnabled = true;
-            lstOutput.ItemHeight = 15;
-            lstOutput.Location = new Point(84, 241);
+            lstOutput.Location = new Point(96, 321);
+            lstOutput.Margin = new Padding(3, 4, 3, 4);
             lstOutput.Name = "lstOutput";
-            lstOutput.Size = new Size(333, 109);
+            lstOutput.Size = new Size(380, 144);
             lstOutput.TabIndex = 6;
             lstOutput.TabStop = false;
             // 
             // btnCal
             // 
             btnCal.BackColor = SystemColors.Window;
-            btnCal.Location = new Point(53, 375);
+            btnCal.Location = new Point(61, 500);
+            btnCal.Margin = new Padding(3, 4, 3, 4);
             btnCal.Name = "btnCal";
-            btnCal.Size = new Size(102, 51);
+            btnCal.Size = new Size(117, 68);
             btnCal.TabIndex = 7;
             btnCal.Text = "&Calculate Total";
             btnCal.UseVisualStyleBackColor = false;
@@ -94,9 +94,10 @@
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(237, 375);
+            btnReset.Location = new Point(271, 500);
+            btnReset.Margin = new Padding(3, 4, 3, 4);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(75, 51);
+            btnReset.Size = new Size(86, 68);
             btnReset.TabIndex = 8;
             btnReset.Text = "&Reset";
             btnReset.UseVisualStyleBackColor = true;
@@ -104,9 +105,10 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(388, 375);
+            btnQuit.Location = new Point(443, 500);
+            btnQuit.Margin = new Padding(3, 4, 3, 4);
             btnQuit.Name = "btnQuit";
-            btnQuit.Size = new Size(75, 51);
+            btnQuit.Size = new Size(86, 68);
             btnQuit.TabIndex = 9;
             btnQuit.Text = "&Quit";
             btnQuit.UseVisualStyleBackColor = true;
@@ -115,41 +117,26 @@
             // labelDistance
             // 
             labelDistance.AutoSize = true;
-            labelDistance.Location = new Point(85, 109);
+            labelDistance.Location = new Point(97, 145);
             labelDistance.Name = "labelDistance";
-            labelDistance.Size = new Size(52, 15);
+            labelDistance.Size = new Size(66, 20);
             labelDistance.TabIndex = 3;
             labelDistance.Text = "Distance";
             // 
             // txtDistance
             // 
-            txtDistance.Location = new Point(173, 104);
+            txtDistance.Location = new Point(198, 139);
+            txtDistance.Margin = new Padding(3, 4, 3, 4);
             txtDistance.Name = "txtDistance";
-            txtDistance.Size = new Size(226, 23);
+            txtDistance.Size = new Size(258, 27);
             txtDistance.TabIndex = 4;
-            // 
-            // LabelMPG
-            // 
-            LabelMPG.AutoSize = true;
-            LabelMPG.Location = new Point(85, 146);
-            LabelMPG.Name = "LabelMPG";
-            LabelMPG.Size = new Size(33, 15);
-            LabelMPG.TabIndex = 5;
-            LabelMPG.Text = "MPG";
-            // 
-            // txtMGP
-            // 
-            txtMGP.Location = new Point(173, 147);
-            txtMGP.Name = "txtMGP";
-            txtMGP.Size = new Size(226, 23);
-            txtMGP.TabIndex = 6;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(84, 73);
+            label2.Location = new Point(96, 97);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(85, 20);
             label2.TabIndex = 0;
             label2.Text = "Destination";
             // 
@@ -159,56 +146,63 @@
             groupBox1.Controls.Add(rdoMinivan);
             groupBox1.Controls.Add(rdoSuv);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(38, 1);
+            groupBox1.Location = new Point(43, 1);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(409, 63);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(467, 84);
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Car Type";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // rdoSuv
-            // 
-            rdoSuv.AutoSize = true;
-            rdoSuv.Location = new Point(27, 25);
-            rdoSuv.Name = "rdoSuv";
-            rdoSuv.Size = new Size(44, 19);
-            rdoSuv.TabIndex = 1;
-            rdoSuv.TabStop = true;
-            rdoSuv.Text = "Suv";
-            rdoSuv.UseVisualStyleBackColor = true;
-            // 
-            // rdoMinivan
-            // 
-            rdoMinivan.AutoSize = true;
-            rdoMinivan.Location = new Point(114, 25);
-            rdoMinivan.Name = "rdoMinivan";
-            rdoMinivan.Size = new Size(68, 19);
-            rdoMinivan.TabIndex = 2;
-            rdoMinivan.TabStop = true;
-            rdoMinivan.Text = "Minivan";
-            rdoMinivan.UseVisualStyleBackColor = true;
-            // 
             // rdoMicro
             // 
             rdoMicro.AutoSize = true;
-            rdoMicro.Location = new Point(213, 25);
+            rdoMicro.Location = new Point(243, 33);
+            rdoMicro.Margin = new Padding(3, 4, 3, 4);
             rdoMicro.Name = "rdoMicro";
-            rdoMicro.Size = new Size(56, 19);
+            rdoMicro.Size = new Size(68, 24);
             rdoMicro.TabIndex = 3;
             rdoMicro.TabStop = true;
             rdoMicro.Text = "Micro";
             rdoMicro.UseVisualStyleBackColor = true;
+            rdoMicro.CheckedChanged += rdoMicro_CheckedChanged;
+            // 
+            // rdoMinivan
+            // 
+            rdoMinivan.AutoSize = true;
+            rdoMinivan.Location = new Point(130, 33);
+            rdoMinivan.Margin = new Padding(3, 4, 3, 4);
+            rdoMinivan.Name = "rdoMinivan";
+            rdoMinivan.Size = new Size(83, 24);
+            rdoMinivan.TabIndex = 2;
+            rdoMinivan.TabStop = true;
+            rdoMinivan.Text = "MiniVan";
+            rdoMinivan.UseVisualStyleBackColor = true;
+            rdoMinivan.CheckedChanged += rdoMinivan_CheckedChanged;
+            // 
+            // rdoSuv
+            // 
+            rdoSuv.AutoSize = true;
+            rdoSuv.Checked = true;
+            rdoSuv.Location = new Point(31, 33);
+            rdoSuv.Margin = new Padding(3, 4, 3, 4);
+            rdoSuv.Name = "rdoSuv";
+            rdoSuv.Size = new Size(57, 24);
+            rdoSuv.TabIndex = 1;
+            rdoSuv.TabStop = true;
+            rdoSuv.Text = "SUV";
+            rdoSuv.UseVisualStyleBackColor = true;
+            rdoSuv.CheckedChanged += rdoSuv_CheckedChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(498, 450);
+            ClientSize = new Size(569, 600);
             Controls.Add(groupBox1);
             Controls.Add(label2);
-            Controls.Add(txtMGP);
-            Controls.Add(LabelMPG);
             Controls.Add(txtDistance);
             Controls.Add(labelDistance);
             Controls.Add(btnQuit);
@@ -216,8 +210,10 @@
             Controls.Add(btnCal);
             Controls.Add(lstOutput);
             Controls.Add(txtDestination);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Jose Car Trip";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -236,8 +232,6 @@
         private Button btnReset;
         private Label labelDistance;
         private TextBox txtDistance;
-        private Label LabelMPG;
-        private TextBox txtMGP;
         private Label lblDestination;
         private Label label2;
         private GroupBox groupBox1;
