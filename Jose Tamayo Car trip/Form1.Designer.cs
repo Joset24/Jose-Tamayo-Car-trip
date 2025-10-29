@@ -154,7 +154,7 @@
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Car Type";
-            groupBox1.Enter += groupBox1_Enter;
+            //groupBox1.Enter += groupBox1_Enter;
             // 
             // rdoMicro
             // 

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|c:\\users\\joset\\source\\repos\\joset24\\joset24\\jose-tamayo-car-trip\\jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|solutionrelative:jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|solutionrelative:jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|c:\\users\\joset\\source\\repos\\joset24\\joset24\\jose-tamayo-car-trip\\jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|solutionrelative:jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|c:\\users\\joset\\source\\repos\\joset24\\joset24\\jose-tamayo-car-trip\\jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|solutionrelative:jose tamayo car trip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94B132B3-F108-49BD-B067-800AC5060925}|Jose Tamayo Car trip\\Jose Tamayo Car trip.csproj|c:\\users\\joset\\source\\repos\\joset24\\joset24\\jose-tamayo-car-trip\\jose tamayo car trip\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,32 +40,32 @@
               "RelativeDocumentMoniker": "Jose Tamayo Car trip\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.Designer.cs",
               "RelativeToolTip": "Jose Tamayo Car trip\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T22:42:01.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs",
               "RelativeDocumentMoniker": "Jose Tamayo Car trip\\Form1.cs",
-              "ToolTip": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs [Design]",
-              "RelativeToolTip": "Jose Tamayo Car trip\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs [Design]*",
+              "RelativeToolTip": "Jose Tamayo Car trip\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T15:13:23.611Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs",
               "RelativeDocumentMoniker": "Jose Tamayo Car trip\\Form1.cs",
-              "ToolTip": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs",
-              "RelativeToolTip": "Jose Tamayo Car trip\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAdAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\joset\\source\\repos\\Joset24\\Joset24\\Jose-Tamayo-Car-trip\\Jose Tamayo Car trip\\Form1.cs*",
+              "RelativeToolTip": "Jose Tamayo Car trip\\Form1.cs*",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwIQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T17:25:02.488Z",
               "EditorCaption": ""

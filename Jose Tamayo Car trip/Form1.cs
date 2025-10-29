@@ -60,7 +60,8 @@ namespace Jose_Tamayo_Car_trip
             if (!isDistanceValid || distance < 0)
 
             {
-                MessageBox.Show("Distance should be a Postive number", "distanceinvalid");
+               lstOutput.Items.Clear();
+               lstOutput.Items.Add("Error in the distance should be a Postive number  ");
             }
 
 
@@ -73,24 +74,28 @@ namespace Jose_Tamayo_Car_trip
                         mpg = 25;
                         break;
                     case MICRO_MODEL:
-                        mpg = 20;
+                        mpg = 40;
                         break;
                     case MINIVAN_MODEL:
                         mpg = 30;
                         break;
-                }
+                    default:
+                        lstOutput.Items.Add("Error in switch - This should never happen");
+                        break;
+
+                }// end of switch
 
                 numberOfGallon = distance / mpg;
 
                 // Output - every variable
 
                 lstOutput.Items.Clear();
-                lstOutput.Items.Add("To go to " + txtDestination.Text + " " + numberOfGallon.ToString()+ " gallon");
-                lstOutput.Items.Add(" Destination is ");
-                lstOutput.Items.Add("Distance in miles is ");
-                lstOutput.Items.Add("MPG is");
-                lstOutput.Items.Add("Car Type is ");
-                lstOutput.Items.Add("Gallons used is ");
+                
+                lstOutput.Items.Add(" Destination is "+ destination);
+                lstOutput.Items.Add("Distance in miles is " + distance.ToString());
+                lstOutput.Items.Add("MPG is " + mpg.ToString());
+                lstOutput.Items.Add("Car Type is " + CarType);
+                lstOutput.Items.Add("Gallons used is "+ numberOfGallon.ToString());
 
 
 
@@ -98,29 +103,35 @@ namespace Jose_Tamayo_Car_trip
             }
             }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            rdoSuv.Checked = true;
         }
 
         private void rdoSuv_CheckedChanged(object sender, EventArgs e)
         {
-            CarType = SUV_MODEL;
+            if (rdoSuv.Checked)
+            {
+                CarType = SUV_MODEL;
+            }
         }
 
         private void rdoMinivan_CheckedChanged(object sender, EventArgs e)
         {
-            CarType = MINIVAN_MODEL;
+            if (rdoMinivan.Checked)
+            {
+                CarType = MINIVAN_MODEL;
+            }
         }
 
         private void rdoMicro_CheckedChanged(object sender, EventArgs e)
         {
-            CarType = MICRO_MODEL;
+            if (rdoMicro.Checked)
+            {
+                CarType = MICRO_MODEL;
+            }
         }
     }
 }
