@@ -70,7 +70,7 @@ namespace Jose_Tamayo_Car_trip
 
                 switch (CarType)
                 {
-                    case SUV_MODEL:
+                    case SUV_MODEL:  
                         mpg = 25;
                         break;
                     case MICRO_MODEL:
@@ -97,6 +97,13 @@ namespace Jose_Tamayo_Car_trip
                 lstOutput.Items.Add("Car Type is " + CarType);
                 lstOutput.Items.Add("Gallons used is "+ numberOfGallon.ToString());
 
+                //ica 6
+                sw = File.Appendtext(CarTripTransLog);
+                sw.WriteLine(" Destination is " + destination);
+                lstOutput.Items.Add("Distance in miles is " + distance.ToString());
+                lstOutput.Items.Add("MPG is " + mpg.ToString());
+                lstOutput.Items.Add("Car Type is " + CarType);
+                lstOutput.Items.Add("Gallons used is " + numberOfGallon.ToString());
 
 
                 btnReset.Focus();
