@@ -53,6 +53,10 @@ namespace Jose_Tamayo_Car_trip
 
             destination = txtDestination.Text;
 
+            //ICA 6
+            string CarTripTransLog = "cartypeTransactionlog.txt";
+            StreamWriter sw;
+
             // input
             // Read from the txtbox into the variable
 
@@ -98,12 +102,20 @@ namespace Jose_Tamayo_Car_trip
                 lstOutput.Items.Add("Gallons used is "+ numberOfGallon.ToString());
 
                 //ica 6
-                sw = File.Appendtext(CarTripTransLog);
+                sw = File.AppendText(CarTripTransLog);
+                sw.Write(" *********** Tranaction starts at: " +
+                    DateTime.Now + " *********** ");
                 sw.WriteLine(" Destination is " + destination);
-                lstOutput.Items.Add("Distance in miles is " + distance.ToString());
-                lstOutput.Items.Add("MPG is " + mpg.ToString());
-                lstOutput.Items.Add("Car Type is " + CarType);
-                lstOutput.Items.Add("Gallons used is " + numberOfGallon.ToString());
+                sw.WriteLine("Distance in miles is " + distance.ToString());
+                sw.WriteLine("MPG is " + mpg.ToString());
+                sw.WriteLine("Car Type is " + CarType);
+                sw.WriteLine("Gallons used is " + numberOfGallon.ToString());
+
+
+                sw.Close();
+
+                //* example of different ways to display date - uncomment to See the * differences 
+                lstOutput.Items.Add(DateTime.Now.ToString());
 
 
                 btnReset.Focus();
