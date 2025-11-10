@@ -13,7 +13,9 @@ namespace Jose_Tamayo_Car_trip
         const string MINIVAN_MODEL = "Minivan Model";
         const string MICRO_MODEL = "Micro Model";
         private string CarType = SUV_MODEL;
-
+        string CartypeTranslog = "CartypeTransactionlog.txt";
+        string CartypeConfig = "CartypeConfig.txt";
+            
 
 
         private void btnQuit_Click(object sender, EventArgs e)
@@ -39,6 +41,7 @@ namespace Jose_Tamayo_Car_trip
             txtDistance.Clear();
 
             lstOutput.Items.Clear();
+            rdoSuv.Checked = true;
 
 
         }
@@ -103,7 +106,7 @@ namespace Jose_Tamayo_Car_trip
 
                 //ica 6
                 sw = File.AppendText(CarTripTransLog);
-                sw.Write(" *********** Tranaction starts at: " +
+                sw.Write(" *********** Transaction starts at: " +
                     DateTime.Now + " *********** ");
                 sw.WriteLine(" Destination is " + destination);
                 sw.WriteLine("Distance in miles is " + distance.ToString());
@@ -113,9 +116,13 @@ namespace Jose_Tamayo_Car_trip
 
 
                 sw.Close();
-
+    
                 //* example of different ways to display date - uncomment to See the * differences 
-                lstOutput.Items.Add(DateTime.Now.ToString());
+                lstOutput.Items.Add(DateTime.Now.ToString("D"));
+                lstOutput.Items.Add(DateTime.Now.ToString("d"));
+                lstOutput.Items.Add(DateTime.Now.ToString("T"));
+                lstOutput.Items.Add(DateTime.Now.ToString("t"));
+                lstOutput.Items.Add(DateTime.Now.ToString("G"));
 
 
                 btnReset.Focus();
